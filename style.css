@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #1d1d1d;
+    background: #c4d0dc;
+}
+
+p, h2 {
+    position: relative;
+    z-index: 1;
+    margin: 20px 15%;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.image {
+    height: 380px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url(https://images.freeimages.com/images/large-previews/e2a/wind-turbines-1307050.jpg);
+}
+.text {
+    background: #fff;
+    position: relative;
+}
+
+.text::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 125%;
+    background: #ffffff;
+    rotate: -3deg;
+    translate: -50% -50%;
+}
